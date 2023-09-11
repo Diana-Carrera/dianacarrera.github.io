@@ -25,8 +25,8 @@ h1 {
 #calculadora{
     background: white;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
-    width: 70%;
-    height: 130%;
+    width: 50%;
+    height: 100%;
     float: left;
 }
 
@@ -48,7 +48,7 @@ h1 {
 }
 input {
 	width: 50%;
-    padding: 10px 10px;
+    padding: 12px 10px;
     border: none;
     background-color: #fffefe;
 }
