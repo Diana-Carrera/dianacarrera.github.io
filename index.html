@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
-        <head>
-            <link rel="stylesheet" href="./style.css" />
-            <script src="script.js" defer></script>
-        </head>
+<html lang="es">
+            <head>:
+                <meta charset="UTF-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Hidratación Basal</title>
+                <link rel="stylesheet" href="./style.css" />
+                <script src="script.js" defer></script>
+            </head>
         <body>
             <div id="contenedor">
                 <div id="calculadora">
@@ -29,22 +33,4 @@
                 </div>
             </div>
         </body>
-        <script>
-            function calcularHidratacion() {
-                var peso = parseFloat(document.getElementById('pesoInput').value);
-                var hidratacion = 0;
-            
-                if (peso >= 0 && peso <= 10) {
-                    hidratacion = peso * 100;
-                } else if (peso > 10 && peso <= 20) {
-                    hidratacion = 1000 + (peso - 10) * 50;
-                } else if (peso > 20) {
-                    hidratacion = 1000 + 500 + (peso - 20) * 20;
-                }
-            
-                var resultadoElement = document.getElementById('resultado');
-                resultadoElement.textContent = 'La hidratación basal es de ' + hidratacion + ' cc/h';
-            }
-            </script>
-    </body>
 </html>
